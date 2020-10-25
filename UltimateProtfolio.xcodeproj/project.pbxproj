@@ -11,6 +11,7 @@
 		04C9B2DB254643DD004AAA5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9B2DA254643DD004AAA5D /* ContentView.swift */; };
 		04C9B2DD254643DD004AAA5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C9B2DC254643DD004AAA5D /* Assets.xcassets */; };
 		04C9B2E0254643DD004AAA5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C9B2DF254643DD004AAA5D /* Preview Assets.xcassets */; };
+		04C9B2EA25464405004AAA5D /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04C9B2E825464405004AAA5D /* Main.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		04C9B2DC254643DD004AAA5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04C9B2DF254643DD004AAA5D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		04C9B2E1254643DD004AAA5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C9B2E925464405004AAA5D /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				04C9B2D8254643DD004AAA5D /* UltimateProtfolioApp.swift */,
 				04C9B2DA254643DD004AAA5D /* ContentView.swift */,
+				04C9B2E825464405004AAA5D /* Main.xcdatamodeld */,
 				04C9B2DC254643DD004AAA5D /* Assets.xcassets */,
 				04C9B2E1254643DD004AAA5D /* Info.plist */,
 				04C9B2DE254643DD004AAA5D /* Preview Content */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C9B2EA25464405004AAA5D /* Main.xcdatamodeld in Sources */,
 				04C9B2DB254643DD004AAA5D /* ContentView.swift in Sources */,
 				04C9B2D9254643DD004AAA5D /* UltimateProtfolioApp.swift in Sources */,
 			);
@@ -328,6 +332,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		04C9B2E825464405004AAA5D /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04C9B2E925464405004AAA5D /* Main.xcdatamodel */,
+			);
+			currentVersion = 04C9B2E925464405004AAA5D /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 04C9B2CD254643DD004AAA5D /* Project object */;
 }
