@@ -17,7 +17,6 @@ struct HomeView: View {
                     dataController.deleteAll()
                     try? dataController.createSampleData()
                 }
-                ProjectView(showClosedProject: false)
             }
         }
         .navigationTitle("Home")

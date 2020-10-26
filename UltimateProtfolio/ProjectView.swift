@@ -10,6 +10,7 @@ import SwiftUI
 struct ProjectView: View {
     let showClosedProject: Bool
     let projects: FetchRequest<Project>
+    let formatter: DateFormatter
     
     init(showClosedProject: Bool = false) {
         self.showClosedProject = showClosedProject
@@ -17,13 +18,20 @@ struct ProjectView: View {
             entity: Project.entity(),
             sortDescriptors: [NSSortDescriptor(keyPath: \Project.creationDate, ascending: false)],
             predicate: NSPredicate(format: "closed = %d", showClosedProject))
+        self.formatter = DateFormatter()
+        self.formatter.dateFormat = "HH:mm:ss"
+
     }
     
     var body: some View {
         NavigationView{
             List{
                 ForEach(projects.wrappedValue) { project in
-                    Section(header: Text(project.title ?? "")) {
+                    
+
+
+                    Section(
+                        header: Text("\(project.title ?? "") - \(self.formatter.string(from: project.creationDate!))")) {
                         ForEach(project.items?.allObjects as? [Item] ?? []) {
                             item in
                             Text(item.title ?? "")
