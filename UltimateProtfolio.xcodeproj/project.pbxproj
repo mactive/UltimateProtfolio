@@ -12,6 +12,10 @@
 		04C9B2DD254643DD004AAA5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C9B2DC254643DD004AAA5D /* Assets.xcassets */; };
 		04C9B2E0254643DD004AAA5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C9B2DF254643DD004AAA5D /* Preview Assets.xcassets */; };
 		04C9B2EA25464405004AAA5D /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04C9B2E825464405004AAA5D /* Main.xcdatamodeld */; };
+		04C9B2ED2546490B004AAA5D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9B2EC2546490B004AAA5D /* DataController.swift */; };
+		04C9B2F325464F92004AAA5D /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C9B2F225464F92004AAA5D /* CloudKit.framework */; };
+		04C9B2F6254658F1004AAA5D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9B2F5254658F1004AAA5D /* HomeView.swift */; };
+		04C9B2FA25465A23004AAA5D /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9B2F925465A23004AAA5D /* ProjectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,11 @@
 		04C9B2DF254643DD004AAA5D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		04C9B2E1254643DD004AAA5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04C9B2E925464405004AAA5D /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		04C9B2EC2546490B004AAA5D /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		04C9B2EF25464F63004AAA5D /* UltimateProtfolio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UltimateProtfolio.entitlements; sourceTree = "<group>"; };
+		04C9B2F225464F92004AAA5D /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		04C9B2F5254658F1004AAA5D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		04C9B2F925465A23004AAA5D /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C9B2F325464F92004AAA5D /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +50,7 @@
 			children = (
 				04C9B2D7254643DD004AAA5D /* UltimateProtfolio */,
 				04C9B2D6254643DD004AAA5D /* Products */,
+				04C9B2F125464F92004AAA5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,7 +65,11 @@
 		04C9B2D7254643DD004AAA5D /* UltimateProtfolio */ = {
 			isa = PBXGroup;
 			children = (
+				04C9B2EF25464F63004AAA5D /* UltimateProtfolio.entitlements */,
 				04C9B2D8254643DD004AAA5D /* UltimateProtfolioApp.swift */,
+				04C9B2F5254658F1004AAA5D /* HomeView.swift */,
+				04C9B2F925465A23004AAA5D /* ProjectView.swift */,
+				04C9B2EC2546490B004AAA5D /* DataController.swift */,
 				04C9B2DA254643DD004AAA5D /* ContentView.swift */,
 				04C9B2E825464405004AAA5D /* Main.xcdatamodeld */,
 				04C9B2DC254643DD004AAA5D /* Assets.xcassets */,
@@ -70,6 +85,14 @@
 				04C9B2DF254643DD004AAA5D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04C9B2F125464F92004AAA5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04C9B2F225464F92004AAA5D /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +164,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C9B2FA25465A23004AAA5D /* ProjectView.swift in Sources */,
 				04C9B2EA25464405004AAA5D /* Main.xcdatamodeld in Sources */,
+				04C9B2F6254658F1004AAA5D /* HomeView.swift in Sources */,
+				04C9B2ED2546490B004AAA5D /* DataController.swift in Sources */,
 				04C9B2DB254643DD004AAA5D /* ContentView.swift in Sources */,
 				04C9B2D9254643DD004AAA5D /* UltimateProtfolioApp.swift in Sources */,
 			);
@@ -271,6 +297,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UltimateProtfolio/UltimateProtfolio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"UltimateProtfolio/Preview Content\"";
 				DEVELOPMENT_TEAM = PYA7HDDS6Y;
@@ -293,6 +320,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UltimateProtfolio/UltimateProtfolio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"UltimateProtfolio/Preview Content\"";
 				DEVELOPMENT_TEAM = PYA7HDDS6Y;
