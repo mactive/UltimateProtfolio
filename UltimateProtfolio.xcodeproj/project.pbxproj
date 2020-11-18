@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040212202547AB66000E64C4 /* Item-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402121F2547AB66000E64C4 /* Item-CoreDataHelpers.swift */; };
+		040212232547AC50000E64C4 /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040212222547AC50000E64C4 /* Project-CoreDataHelpers.swift */; };
 		04C9B2D9254643DD004AAA5D /* UltimateProtfolioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9B2D8254643DD004AAA5D /* UltimateProtfolioApp.swift */; };
 		04C9B2DB254643DD004AAA5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C9B2DA254643DD004AAA5D /* ContentView.swift */; };
 		04C9B2DD254643DD004AAA5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C9B2DC254643DD004AAA5D /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0402121F2547AB66000E64C4 /* Item-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelpers.swift"; sourceTree = "<group>"; };
+		040212222547AC50000E64C4 /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		04C9B2D5254643DD004AAA5D /* UltimateProtfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltimateProtfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C9B2D8254643DD004AAA5D /* UltimateProtfolioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimateProtfolioApp.swift; sourceTree = "<group>"; };
 		04C9B2DA254643DD004AAA5D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 				04C9B2D8254643DD004AAA5D /* UltimateProtfolioApp.swift */,
 				04C9B2F5254658F1004AAA5D /* HomeView.swift */,
 				04C9B2F925465A23004AAA5D /* ProjectView.swift */,
+				0402121F2547AB66000E64C4 /* Item-CoreDataHelpers.swift */,
+				040212222547AC50000E64C4 /* Project-CoreDataHelpers.swift */,
 				04C9B2EC2546490B004AAA5D /* DataController.swift */,
 				04C9B2DA254643DD004AAA5D /* ContentView.swift */,
 				04C9B2E825464405004AAA5D /* Main.xcdatamodeld */,
@@ -166,10 +172,12 @@
 			files = (
 				04C9B2FA25465A23004AAA5D /* ProjectView.swift in Sources */,
 				04C9B2EA25464405004AAA5D /* Main.xcdatamodeld in Sources */,
+				040212232547AC50000E64C4 /* Project-CoreDataHelpers.swift in Sources */,
 				04C9B2F6254658F1004AAA5D /* HomeView.swift in Sources */,
 				04C9B2ED2546490B004AAA5D /* DataController.swift in Sources */,
 				04C9B2DB254643DD004AAA5D /* ContentView.swift in Sources */,
 				04C9B2D9254643DD004AAA5D /* UltimateProtfolioApp.swift in Sources */,
+				040212202547AB66000E64C4 /* Item-CoreDataHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

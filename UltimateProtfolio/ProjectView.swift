@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ProjectView: View {
+    static let openedTag: String? = "opened"
+    static let closedTag: String? = "closed"
+    
     let showClosedProject: Bool
     let projects: FetchRequest<Project>
     let formatter: DateFormatter
@@ -31,8 +34,8 @@ struct ProjectView: View {
 
 
                     Section(
-                        header: Text("\(project.title ?? "") - \(self.formatter.string(from: project.creationDate!))")) {
-                        ForEach(project.items?.allObjects as? [Item] ?? []) {
+                        header: Text("\(project.projectTitle) - \(self.formatter.string(from: project.projectCreationDate))")) {
+                        ForEach(project.projectItems) {
                             item in
                             Text(item.title ?? "")
                         }
